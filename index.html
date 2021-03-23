@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Handle Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="handleForm.css">
+</head>
+
+<body>
+  <div class="logoViblo"></div>
+  <form action="">
+    <h3>Register account for Viblo</h3>
+    <h4>Welcome to viblo platform! Join us to find useful information required to improve your skills. Please your fill
+      into the form bellow to continue
+    </h4>
+
+    <!-- Your Name -->
+    <input type="text" id="txtYourName" placeholder="Your Name">
+    <!-- Address and UserName -->
+    <div id="emailUsername">
+      <!-- Email -->
+      <input type="text" id="txtYourEmail" placeholder="Your email address">
+      <!-- UseName -->
+      <input type="text" id="txtYourUserName" placeholder="Username" >
+    </div>
+    <!-- PassWord -->
+    <input type="text" id="txtPassword" placeholder="Password">
+    <!-- Confirm PassWord -->
+    <input type="text" id="txtRepeatPassword" placeholder="Confirm your password">
+    <!-- I agree, yes or no -->
+    <div id="agree"> 
+      <input type="checkbox" id="agree">
+      <label for="">I agree to <span>Viblo Term of Service</span></label>
+    </div>
+    <!-- Button Sign up -->
+    <button id="signup">Sign up</button>
+
+    <!-- Or login width -->
+    <div id="orLoginWith">
+      <hr>
+      <span>Or login with</span>
+      <hr>
+    </div>
+    <!-- Connect -->
+    <div id="connect">
+      <button class="icon-connect facebook">
+        <i></i>
+        <p>Facebook</p>
+      </button>
+      <button class="icon-connect google">
+        <i></i>
+        <p>Google</p>
+      </button>
+      <button class="icon-connect github">
+        <i></i>
+        <p>Github</p>
+      </button>
+
+    </div>
+
+  </form>
+
+
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

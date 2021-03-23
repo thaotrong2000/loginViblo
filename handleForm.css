@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px; 
+
+}
+
+body{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tạo logo Viblo */
+.logoViblo{
+    width: 200px;
+    height: 40px; 
+    margin: 20px 0px;
+    background-image: url("logoViblo.svg"); 
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+/* Tạo khung xử lý CSS for FORM LOGIN */
+
+form{
+    width: 40%; 
+    height: 100vh ; 
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow:0px 7px 22px 5px #ccc; 
+    
+}
+
+h3,h4{
+    padding: 10px 0px;
+}
+h3{
+    font-weight: 520;
+    font-size: 24px;
+}
+h4{
+    font-weight: 500;
+}
+
+input{
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    border: 0.1px solid #ccc;
+    margin: 8px 0px;    
+    padding: 0px 10px;
+    outline: none;
+}
+ form > div {
+     margin: 8px 0px;
+ }
+
+ button{
+     height: 40px;
+     outline: none;
+     cursor: pointer;
+ }
+
+ form #agree{
+     display: flex; 
+     flex-direction: row;
+     align-items: center;
+ }
+
+ #agree label{
+     padding-left: 10px;
+ }
+
+ #agree span{
+     color: #007bff;
+     font-weight: 500;
+ }
+
+ #signup{
+     width: 100%px;
+     height:40px;
+     line-height: 40px;
+     border: none;
+     border-radius: 4px;
+     background-color: #409eff;
+     color: white;
+     margin: 20px 0px 15px 0px;
+ }
+
+ #emailUsername{
+     display: flex; 
+     flex-direction: row; 
+     justify-content: space-between;
+ }
+
+ #emailUsername input{
+    width: 48%;
+ }
+
+ #orLoginWith{
+     display: flex; 
+     flex-direction: row; 
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ #orLoginWith hr{
+    width: 38%;
+    height: 1px;
+ }
+
+#connect{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icon-connect{
+    width: 30%; 
+    max-width: 30%;
+}
+
+.facebook{
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook i{
+    background-image: url("facebook.png");
+    width: 15px; 
+    height: 15px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+.google{
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.google i{
+    background-image: url("google.png");
+    width: 15px; 
+    height: 15px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+.github{
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.github i{
+    background-image: url("github.png");
+    width: 15px; 
+    height: 15px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+
+
+/* Tạo response cho màn hình nhỏ hơn 768px */
+
+ @media only screen  and (max-width: 768px){
+    form{
+        width: 70%;
+        height: 120vh;
+    }
+
+    #connect{
+        display: flex; 
+        flex-direction: column; 
+
+    }
+
+    .facebook{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+    }
+    .google{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        border: 1px solid #ccc;
+
+
+    }
+    .github{
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #ccc;
+
+    }
+
+    #orLoginWith hr{
+        width: 30%;
+    }
+} 
+
+
+/* Tạo response cho màn hình nhỏ hơn 968px */
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    form{
+        height: 100vh;
+        width: 60%;
+    }
+}
+
+
+/* Tạo response cho màn hình nhỏ hơn 968px */
+
+
